@@ -9,7 +9,8 @@ export class Login{
 
 
 realizarLogin(){
-
+    
+        cy.visit('https://automationexercise.com/');
         this.elementos.btnSignIn().should('be.visible').click()
         this.elementos.lblEmail().should('be.visible').type('camila.goncalves24@hotmail.com')
         this.elementos.lblPassword().type('camilaAuto1')
