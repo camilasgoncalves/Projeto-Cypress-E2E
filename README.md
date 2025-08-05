@@ -1,6 +1,7 @@
-# Projeto de Teste E2E com Cypress
+# Automação E2E de Site de Compras
 
-Este é um projeto básico de automação E2E usando Cypress.
+Este projeto tem como objetivo automatizar testes ponta a ponta (E2E) de um site de compras utilizando o framework Cypress. A automação cobre todo o fluxo do usuário — desde a navegação pelo site até a finalização da compra.
+
 
 ## Comandos
 
