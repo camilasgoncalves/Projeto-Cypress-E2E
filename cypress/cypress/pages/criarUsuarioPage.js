@@ -50,7 +50,7 @@ gerarEmailAleatorio() {
     this.elementos.btnCreateAccount().click()
 
     cy.url().should('include', '/account_created')
-    cy.contains('ACCOUNT CREATED!').should('be.visible')
+    cy.contains('Account Created!').should('be.visible')
 
     }
 
