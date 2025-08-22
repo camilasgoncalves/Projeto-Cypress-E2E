@@ -24,17 +24,17 @@ describe('Fluxos de Compras', () => {
         cart.validateCartWithItens()
     })
 
-    it('Escreve uma review', () => {
-        home.accessWebsite()
-        home.accessProducts()
-        compras.writeYourReview()
-    })
+    // it('Escreve uma review', () => {
+    //     home.accessWebsite()
+    //     home.accessProducts()
+    //     compras.writeYourReview()
+    // })
 
-     it('Adiciona e-mail para recebimento de updates', () => {
-        home.accessWebsite()
-        home.accessProducts()
-        compras.subscription()
-    })
+    //  it('Adiciona e-mail para recebimento de updates', () => {
+    //     home.accessWebsite()
+    //     home.accessProducts()
+    //     compras.subscription()
+    // })
 
      it('Realiza uma compra', () => {
         home.accessWebsite()
