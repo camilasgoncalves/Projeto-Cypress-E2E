@@ -24,6 +24,13 @@ describe('Fluxos de Compras', () => {
         cart.validateCartWithItens()
     })
 
+    it('Deleta itens do carrinho', () => {
+        home.accessWebsite()
+        home.accessProducts()
+        compras.addProductsToCart()
+        cart.deleteItemCart()
+    })
+
     // it('Escreve uma review', () => {
     //     home.accessWebsite()
     //     home.accessProducts()
@@ -36,7 +43,7 @@ describe('Fluxos de Compras', () => {
     //     compras.subscription()
     // })
 
-     it('Realiza uma compra', () => {
+    it('Realiza uma compra', () => {
         home.accessWebsite()
         home.accessLogin()
         login.login()
@@ -46,4 +53,9 @@ describe('Fluxos de Compras', () => {
         cart.placeOrder()
     })
 
+    it('Pesquisa produtos e valida resultado', () => {
+        home.accessWebsite()
+        home.accessProducts()
+        compras.searchItem()
+    })
 })

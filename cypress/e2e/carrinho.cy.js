@@ -42,4 +42,8 @@ export class Cart {
         this.elementos.txtOrderPlaced().should('be.visible')
     }
 
+    deleteItemCart(){
+        this.elementos.btnCartDelete().should('be.visible').click()
+        this.elementos.lblCartWithoutItem().should('be.visible')
+    }
 }
