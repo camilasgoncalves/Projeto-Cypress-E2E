@@ -34,4 +34,8 @@ export class Home {
     accessProducts(){
         this.elementos.btnProducts().should('be.visible').click()
     }
+
+     acessTestCases() {
+        this.elementos.btnTestCases().click()
+    }
 }

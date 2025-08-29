@@ -1,7 +1,7 @@
 import { Home } from "../PO/homePO";
 import { ContactUs } from "../PO/contactUsPO";
 
-describe('Criação de Usuário', () => {
+describe('Contact Us', () => {
 
 const home = new Home()
 const contact = new ContactUs()
