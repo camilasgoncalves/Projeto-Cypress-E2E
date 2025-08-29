@@ -38,4 +38,8 @@ export class Home {
      acessTestCases() {
         this.elementos.btnTestCases().click()
     }
+
+    accessAPI() {
+        this.elementos.btnAPITesting().should('be.visible').click()
+    }
 }
