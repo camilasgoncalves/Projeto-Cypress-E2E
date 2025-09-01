@@ -31,115 +31,60 @@ export class TestCases {
         btnTestCases: () => cy.contains('Test Cases')
     }
 
-    validateTestCases(list) {
-        switch (list) {
-            case 'Test Case 1':
-                this.elementos.itmTestCase1().should('be.visible').click()
-                cy.contains('12. Fill details: First name, Last name, Company, Address, Address2, Country, State, City, Zipcode, Mobile Number').should('be.visible')
-                break
-            case 'Test Case 2':
-                this.elementos.itmTestCase2().should('be.visible').click()
-                cy.contains('6. Enter correct email address and password').should('be.visible')
-                break
-            case 'Test Case 3':
-                this.elementos.itmTestCase3().should('be.visible').click()
-                cy.contains('6. Enter incorrect email address and password').should('be.visible')
-                break
-            case 'Test Case 4':
-                this.elementos.itmTestCase4().should('be.visible').click()
-                cy.contains('10. Verify that user is navigated to login page').should('be.visible')
-                break
-            case 'Test Case 5':
-                this.elementos.itmTestCase5().should('be.visible').click()
-                cy.contains('6. Enter name and already registered email address').should('be.visible')
-                break
-            case 'Test Case 6':
-                this.elementos.itmTestCase6().should('be.visible').click()
-                cy.contains('9. Click OK button').should('be.visible')
-                break
-            case 'Test Case 7':
-                this.elementos.itmTestCase7().should('be.visible').click()
-                cy.contains('5. Verify user is navigated to test cases page successfully').should('be.visible')
-                break
-            case 'Test Case 8':
-                this.elementos.itmTestCase8().should('be.visible').click()
-                cy.contains('5. Verify user is navigated to ALL PRODUCTS page successfully').should('be.visible')
-                break
-            case 'Test Case 9':
-                this.elementos.itmTestCase9().should('be.visible').click()
-                cy.contains('6. Enter product name in search input and click search button').should('be.visible')
-                break
-            case 'Test Case 10':
-                this.elementos.itmTestCase10().should('be.visible').click()
-                cy.contains('6. Enter email address in input and click arrow button').should('be.visible')
-                break
-            case 'Test Case 11':
-                this.elementos.itmTestCase11().should('be.visible').click()
-                cy.contains('7. Enter email address in input and click arrow button').should('be.visible')
-                break
-            case 'Test Case 12':
-                this.elementos.itmTestCase12().should('be.visible').click()
-                cy.contains('9. Verify both products are added to Cart').should('be.visible')
-                break
-            case 'Test Case 13':
-                this.elementos.itmTestCase13().should('be.visible').click()
-                cy.contains('9. Verify that product is displayed in cart page with exact quantity').should('be.visible')
-                break
-            case 'Test Case 14':
-                this.elementos.itmTestCase14().should('be.visible').click()
-                cy.contains('14. Verify Address Details and Review Your Order').should('be.visible')
-                break
-            case 'Test Case 15':
-                this.elementos.itmTestCase15().should('be.visible').click()
-                cy.contains('12. Verify Address Details and Review Your Order').should('be.visible')
-                break
-            case 'Test Case 16':
-                this.elementos.itmTestCase16().should('be.visible').click()
-                cy.contains('13. Enter payment details: Name on Card, Card Number, CVC, Expiration date').should('be.visible')
-                break
-            case 'Test Case 17':
-                this.elementos.itmTestCase17().should('be.visible').click()
-                cy.contains('8. Verify that product is removed from the cart').should('be.visible')
-                break
-            case 'Test Case 18':
-                this.elementos.itmTestCase18().should('be.visible').click()
-                cy.contains('8. Verify that user is navigated to that category page').should('be.visible')
-                break
-            case 'Test Case 19':
-                this.elementos.itmTestCase19().should('be.visible').click()
-                cy.contains('8. Verify that user is navigated to that brand page and can see products').should('be.visible')
-                break
-            case 'Test Case 20':
-                this.elementos.itmTestCase20().should('be.visible').click()
-                cy.contains('11. Again, go to Cart page').should('be.visible')
-                break
-            case 'Test Case 21':
-                this.elementos.itmTestCase21().should('be.visible').click()
-                cy.contains('7. Enter name, email and review').should('be.visible')
-                break
-            case 'Test Case 22':
-                this.elementos.itmTestCase22().should('be.visible').click()
-                cy.contains('7. Verify that product is displayed in cart page').should('be.visible')
-                break
-            case 'Test Case 23':
-                this.elementos.itmTestCase23().should('be.visible').click()
-                cy.contains('13. Verify that the billing address is same address filled at the time registration of account').should('be.visible')
-                break
-            case 'Test Case 24':
-                this.elementos.itmTestCase24().should('be.visible').click()
-                cy.contains('16. Enter payment details: Name on Card, Card Number, CVC, Expiration date').should('be.visible')
-                break
-            case 'Test Case 25':
-                this.elementos.itmTestCase25().should('be.visible').click()
-                cy.contains('6. Click on arrow at bottom right side to move upward').should('be.visible')
-                break
-            case 'Test Case 26':
-                this.elementos.itmTestCase26().should('be.visible').click()
-                cy.contains('6. Scroll up page to top').should('be.visible')
-                break
-        }
+    validateTestCases() {
+        this.elementos.itmTestCase1().should('be.visible').click()
+        cy.contains('12. Fill details: First name, Last name, Company, Address, Address2, Country, State, City, Zipcode, Mobile Number').should('be.visible')
+        this.elementos.itmTestCase2().should('be.visible').click()
+        cy.contains('6. Enter correct email address and password').should('be.visible')
+        this.elementos.itmTestCase3().should('be.visible').click()
+        cy.contains('6. Enter incorrect email address and password').should('be.visible')
+        this.elementos.itmTestCase4().should('be.visible').click()
+        cy.contains('10. Verify that user is navigated to login page').should('be.visible')
+        this.elementos.itmTestCase5().should('be.visible').click()
+        cy.contains('6. Enter name and already registered email address').should('be.visible')
+        this.elementos.itmTestCase6().should('be.visible').click()
+        cy.contains('9. Click OK button').should('be.visible')
+        this.elementos.itmTestCase7().should('be.visible').click()
+        cy.contains('5. Verify user is navigated to test cases page successfully').should('be.visible')
+        this.elementos.itmTestCase8().should('be.visible').click()
+        cy.contains('5. Verify user is navigated to ALL PRODUCTS page successfully').should('be.visible')
+        this.elementos.itmTestCase9().should('be.visible').click()
+        cy.contains('6. Enter product name in search input and click search button').should('be.visible')
+        this.elementos.itmTestCase10().should('be.visible').click()
+        cy.contains('6. Enter email address in input and click arrow button').should('be.visible')
+        this.elementos.itmTestCase11().should('be.visible').click()
+        cy.contains('7. Enter email address in input and click arrow button').should('be.visible')
+        this.elementos.itmTestCase12().should('be.visible').click()
+        cy.contains('9. Verify both products are added to Cart').should('be.visible')
+        this.elementos.itmTestCase13().should('be.visible').click()
+        cy.contains('9. Verify that product is displayed in cart page with exact quantity').should('be.visible')
+        this.elementos.itmTestCase14().should('be.visible').click()
+        cy.contains('14. Verify Address Details and Review Your Order').should('be.visible')
+        this.elementos.itmTestCase15().should('be.visible').click()
+        cy.contains('12. Verify Address Details and Review Your Order').should('be.visible')
+        this.elementos.itmTestCase16().should('be.visible').click()
+        cy.contains('13. Enter payment details: Name on Card, Card Number, CVC, Expiration date').should('be.visible')
+        this.elementos.itmTestCase17().should('be.visible').click()
+        cy.contains('8. Verify that product is removed from the cart').should('be.visible')
+        this.elementos.itmTestCase18().should('be.visible').click()
+        cy.contains('8. Verify that user is navigated to that category page').should('be.visible')
+        this.elementos.itmTestCase19().should('be.visible').click()
+        cy.contains('8. Verify that user is navigated to that brand page and can see products').should('be.visible')
+        this.elementos.itmTestCase20().should('be.visible').click()
+        cy.contains('11. Again, go to Cart page').should('be.visible')
+        this.elementos.itmTestCase21().should('be.visible').click()
+        cy.contains('7. Enter name, email and review').should('be.visible')
+        this.elementos.itmTestCase22().should('be.visible').click()
+        cy.contains('7. Verify that product is displayed in cart page').should('be.visible')
+        this.elementos.itmTestCase23().should('be.visible').click()
+        cy.contains('13. Verify that the billing address is same address filled at the time registration of account').should('be.visible')
+        this.elementos.itmTestCase24().should('be.visible').click()
+        cy.contains('16. Enter payment details: Name on Card, Card Number, CVC, Expiration date').should('be.visible')
+        this.elementos.itmTestCase25().should('be.visible').click()
+        cy.contains('6. Click on arrow at bottom right side to move upward').should('be.visible')
+        this.elementos.itmTestCase26().should('be.visible').click()
+        cy.contains('6. Scroll up page to top').should('be.visible')
 
     }
-
 
 }
