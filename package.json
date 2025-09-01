@@ -1,0 +1,21 @@
+{
+  "name": "projeto",
+  "version": "1.0.0",
+  "description": "Este projeto tem como objetivo automatizar testes ponta a ponta (E2E) de um site de compras utilizando o framework Cypress. A automação cobre todo o fluxo do usuário — desde a navegação pelo site até a finalização da compra.",
+  "main": "cypress.config.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/camilasgoncalves/Projeto-Cypress-E2E.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/camilasgoncalves/Projeto-Cypress-E2E/issues"
+  },
+  "homepage": "https://github.com/camilasgoncalves/Projeto-Cypress-E2E#readme"
+}
