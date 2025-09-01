@@ -9,7 +9,7 @@ describe ('Test Cases', () => {
 it('Validate list of items on the Test Cases page', () => {
     home.accessWebsite()
     home.acessTestCases()
-    testCases.validateTest()
+    testCases.validateTestCases()
 })
 
 })

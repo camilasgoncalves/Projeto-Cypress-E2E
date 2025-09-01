@@ -6,6 +6,8 @@ on:
   pull_request:
     branches: [main]
 
+run-name: Testes E2E em Automation Exercise
+
 jobs:
   cypress-run:
     runs-on: ubuntu-latest
